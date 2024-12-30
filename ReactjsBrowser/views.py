@@ -10,7 +10,7 @@ from rest_framework import permissions
 from .rabbitmq import publish_message
 from django.http import HttpResponse
 from django.shortcuts import render
-
+from .models import *
 
 
 
@@ -40,11 +40,9 @@ class UserViewSet(viewsets.ModelViewSet):
     
     
 def index(request):
-    publish_message("hi this is message")
+    # s1=Entry.objects.filter(blog__name__contains="s").select_related("blog").prefetch_related('authors')
+    s2 = Entry.objects.filter(mod_date__gt="2023-05-01")
+    print(s2)
     return HttpResponse("message pushed to rabbitmq")
-
-
-def index(request):
-    return render(request, 'index.html', {})
 
 

@@ -1,0 +1,42 @@
+[
+    {
+      "model": "your_app.blog",
+      "pk": 1,
+      "fields": {
+        "name": "Tech Trends",
+        "tagline": "Stay updated with the latest in tech."
+      }
+    },
+    {
+      "model": "your_app.author",
+      "pk": 1,
+      "fields": {
+        "name": "John Doe",
+        "email": "john.doe@example.com"
+      }
+    },
+    {
+      "model": "your_app.author",
+      "pk": 2,
+      "fields": {
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com"
+      }
+    },
+    {
+      "model": "your_app.entry",
+      "pk": 1,
+      "fields": {
+        "blog": 1,
+        "headline": "Exploring AI Innovations",
+        "body_text": "AI is advancing at an unprecedented pace...",
+        "pub_date": "2024-12-01",
+        "mod_date": "2024-12-30",
+        "number_of_comments": 10,
+        "number_of_pingbacks": 2,
+        "rating": 8,
+        "authors": [1, 2]
+      }
+    }
+  ]
+  

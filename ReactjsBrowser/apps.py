@@ -7,4 +7,4 @@ class ReactjsbrowserConfig(AppConfig):
 
 
 class teksystem:
-    print("this is not working problem ")
+    pass
